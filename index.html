@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ICA Adventure</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+    </head>
+    <body>
+       <div class="console">
+           <div id="floating_panel">
+               <p>Commands you can use:</p>
+               <ul>
+                   <li>where - displays your current location</li>
+                   <li>look - displays a list of items at the your current location</li>
+                   <li>inventory - displays your current inventory</li>
+                   <li>goto [name of place] - travel to a different location</li>
+                   <li>take [name of item] - take an item from the area and place it in your inventory</li>
+               </ul>
+               <button onclick="onReset()">Reset game</button>
+               <button onclick="onClear()" id="clearConsoleButton">Clear console</button>
+           </div>
+           Welcome to ICA Adventure!
+           <hr>
+           <div id="previousOutput">
+           </div>
+           <div id="textLine">
+                <span id="actionText">action?></span> 
+                <input type="text" id="userInput" autofocus>
+           </div>
+       </div>
+    </body>
+    <script type="text/javascript"></script>
+</html>
